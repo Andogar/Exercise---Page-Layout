@@ -1,0 +1,179 @@
+/*
+
+    COLORS
+
+    Pink   : #ffdddd
+    Purple : #ddddff
+    Green  : #ddffdd
+    Blue   : #ddffff
+    Yellow : #ffffdd
+
+    BREAKPOINTS
+
+    600px
+    1100px
+
+*/
+
+body{
+    font-family: Palatino, Times, serif;
+    background-color: #ddffdd;
+    margin: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+ul{
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+h1, h2, h3{
+    color: #009999;
+}
+
+h2, h3{
+    margin-bottom: 0;
+}
+
+a{
+    font-weight: bold;
+    color: red;
+    text-decoration: none;
+}
+
+a:hover{
+    color: blue;
+}
+
+header{
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddddff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#site_container{
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#logo{
+  flex-basis: 100%
+}
+
+#main_nav{
+    text-align: center;
+    flex-basis: 100%;
+}
+
+#main_nav a{
+    display: block;
+    padding: 10px 2%;
+    background: #ffdddd;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#main_nav a:hover{
+    background: #ddddff;
+}
+
+#logo{
+  text-align: center;
+}
+
+#main_content{
+  background: #ddffff;
+  padding: 10px;
+  padding-left: 25px;
+  border-radius: 5px;
+}
+
+#sidebar_content div{
+  background: #ffffdd;
+  padding: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#site_footer{
+  background: #FFDDAA;
+  text-align: center;
+  padding: 20px;
+}
+
+nav a{
+  margin: 10px;
+}
+
+
+@media screen and (min-width: 600px) {
+
+#main_nav{
+  display: flex;
+}
+
+#main_nav a{
+  flex-basis: 30%;
+}
+
+#sidebar_content{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#sidebar_content div{
+  margin-left: 0;
+  margin-right: 0;
+  flex: 1;
+}
+
+}
+
+@media (min-width: 1100px) {
+
+header{
+  height: 60px;
+}
+
+#logo{
+  flex-basis: 0;
+  margin: 5px;
+}
+
+#main_nav{
+  flex-basis: 70%;
+  margin-left: auto;
+  margin-right: -10px;
+}
+
+#main_nav a{
+  padding-top: px;
+}
+
+#main_content{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#main_content div:first-child{
+  flex: 2;
+}
+
+#main_content div:last-child{
+  flex:1;
+  padding-left: 5%;
+}
+
+
+}
